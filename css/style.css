@@ -1,0 +1,391 @@
+*,
+*::after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: serif;
+  /* отступы */
+  margin: 0;
+}
+
+/* марджин margin внешний отступ а
+падин padding внутренний 
+padding-top отступ сверху*/
+
+.header {
+  /* цвет header */
+  background-color: #F8F8F8;
+  ;
+  /* отступ внутри */
+  /* padding-top: 45px; */
+  padding: 45px 40px;
+}
+
+.header_top {
+  margin-bottom: 100px;
+}
+
+.container {
+  /* ширина */
+  max-width: 1140px;
+  /* обводка для наглядности */
+  /* border: 1px solid red; */
+  /* расположение посередине */
+  margin: auto;
+  padding: 45px 40px;
+
+}
+
+.top {
+  /* раставляет элементы на странице */
+  display: flex;
+  /* выравнивает по вертикали */
+  align-items: center;
+  /* растовляет по краям и центру */
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 800;
+  /* line-height: 27px; */
+}
+
+.nov {
+  /* расположение элементов в строчке */
+  display: flex;
+  list-style: none;
+  /* убирает лишние отступы */
+  padding: 0;
+  margin: 0;
+
+}
+
+/* отступ с прова 20px */
+.non__item {
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+/* последний элемент не имеет отступо справа */
+.non__item:last-child {
+  margin-right: 0;
+}
+
+.phone {
+  font-weight: 800;
+  font-size: 16px;
+  color: #000000;
+  /* убирает подчкркивание */
+  text-decoration: none;
+}
+
+.header-content {
+  display: flex;
+  /* выравнивает текст по центру */
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.header-content__text {
+  /* максимальная ширина */
+  /* max-width: 400px; */
+  flex-basis: 50%;
+}
+
+.header-content__image {
+  max-width: 600px;
+}
+
+.header-content__title {
+  font-size: 58px;
+  /* внутренний отступ снизу */
+  margin-bottom: 23px;
+}
+
+.header-content__description {
+  font-size: 17px;
+  line-height: 160%;
+  margin-bottom: 40px;
+}
+
+.button {
+  background-color: #FF6C6C;
+  /* шрифт кнопки */
+  font-size: 18px;
+  line-height: 160%;
+  color: #FFFFFF;
+  /* отступ сверху по 15px и низу а по краям 56px */
+  padding: 15px 56px;
+  border-radius: 4px;
+  border: none;
+
+}
+
+.button--shadow {
+  box-shadow: 0px 10px 25px rgba(255, 108, 108, 0.5);
+}
+
+.section {
+  /* цвет header */
+  /* background-color: #F8F8F8; */
+  /* отступ внутри */
+  padding-top: 100px;
+  margin-left: 45px;
+  padding-bottom: 100px;
+}
+
+.section__title {
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  flex-basis: 25%;
+  background: #F8F8F8;
+  box-shadow: 0px 4px 4px rgba(104, 104, 104, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  padding: 28px;
+}
+
+.card__goods {
+  margin-bottom: 30px;
+}
+
+.card__image {
+  margin-bottom: 28px;
+}
+
+.card__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card_title {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  max-width: 200px;
+}
+
+.card__prise {
+  font-size: 36px;
+}
+
+.card__button {
+  width: 100%;
+}
+
+.review-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  /* 40/34 */
+}
+
+
+.reviev-card {
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(131, 131, 131, 0.25);
+  border-radius: 10px;
+
+  padding: 30px 20px;
+  flex-basis: 24%;
+  min-height: 400px;
+
+}
+
+.slick-slide {
+  min-height: 400px;
+
+}
+
+
+
+.review-card-title {
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 5px;
+  max-width: 20%;
+}
+
+.review-card-text {
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 100%;
+}
+
+.footer {
+  background: #F8F8F8;
+}
+
+.map {
+  flex-basis: 50%;
+
+}
+
+.input {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(217, 217, 217, 0.25);
+  border-radius: 5px;
+  border: none;
+  padding: 25px 30px;
+}
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+.forma {
+  flex-basis: 50%;
+  padding: 30px 20px;
+}
+
+.form__inputs {
+  display: flex;
+}
+
+.foorm__input {
+  display: flex;
+  margin-bottom: 40px;
+
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.foorm__input {
+  padding: 20px 20px;
+}
+
+.textarea {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(217, 217, 217, 0.25);
+  border-radius: 5px;
+  width: 85%;
+  margin-bottom: 45px;
+
+}
+
+.form__button {
+  margin-right: 20px;
+  font-size: 12px;
+}
+
+.social__link {
+  text-decoration: none;
+  margin-right: 5px;
+  align-items: center;
+  margin-left: 22px;
+}
+
+@media(max-width: 1100px) {
+  .container {
+    max-width: 920px;
+  }
+
+  .header-content__title {
+    font-size: 32px;
+  }
+
+  .card {
+    flex-basis: 40%;
+  }
+
+
+
+  .reviev-card {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+  }
+
+
+
+  .card__image {
+    width: 100%;
+  }
+
+  .button {
+    font-style: 12px;
+    padding: 15px 60px;
+    line-height: 120%;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 990px) {
+  .container {
+    max-width: 760px;
+  }
+
+  .header-content {
+    flex-direction: column;
+  }
+
+  .header-content__description {
+    min-width: 500px;
+  }
+
+  .contacts {
+    flex-direction: column;
+  }
+
+  .contacts__form {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .top {
+    flex-direction: column;
+    min-height: 100px;
+  }
+
+  .header-content {
+    text-align: center;
+  }
+
+  .header-content__title {
+    font-size: 24px;
+  }
+
+  .header-content__description {
+    min-width: 300px;
+    font-size: 14px;
+  }
+
+  .button--shadow {
+    font-size: 12px;
+  }
+
+  .header-content__image {
+    max-width: 80%;
+  }
+
+  .card {
+    flex-basis: 100%;
+  }
+}
